@@ -3,7 +3,7 @@ CampusBazaar is a responsive student marketplace built using HTML, CSS, and Java
 # 🎓 CampusBazaar – Student Marketplace
 
 <p align="center">
-  <img src="images/logo.png" alt="CampusBazaar Logo" width="180">
+  <img src="🎓" alt="CampusBazaar Logo" width="180">
 </p>
 
 <p align="center">
