@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusBazaar - Student Marketplace</title>
+
+    <link rel="stylesheet" href="../CampusBazzar/css/index.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+
+<body>
+    <div id="loader">
+        <h2>
+            CampusBazaar
+        </h2>
+
+    </div>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+    <!-- Logo -->
+    <div class="logo">
+        <a href="index.html">
+            <span>🎓 CampusBazaar</span>
+        </a>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="nav-links">
+
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="Product.html">Products</a></li>
+        <li><a href="Categories.html">Categories</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+
+    <!-- Right Side -->
+    <div class="nav-right">
+        <a href="Login.html" class="login-btn">
+            <i class="fa-solid fa-user"> Login</i>
+        </a>
+        <a href="#" class="icon-btn">
+            <i class="fa-regular fa-heart"></i>
+            <span class="badge">2</span>
+        </a>
+
+        <a href="#" class="icon-btn">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="badge" id="cart-count">0</span>
+
+        </a>
+        <button id="darkMode" class="theme-btn">
+            <i class="fas fa-moon"></i>
+        </button>
+
+    </div>
+
+</nav>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+        <div class="hero-content">
+
+            <h1>
+                <span id="typing"></span>
+            </h1>
+
+            <p>
+                A marketplace designed exclusively for students.
+                Find books, calculators, laptops, cycles and hostel essentials.
+            </p>
+
+            <div class="search-box">
+
+                <input type="text" id="searchInput" placeholder="Search products...">
+                <button>
+                    Search
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="statistics">
+
+        <h2>Our Community</h2>
+
+        <div class="stats-container">
+
+            <div class="stat-card">
+                <i class="fas fa-user-graduate"></i>
+                <h3 class="counter" data-target="1000">0</h3>
+                <p>Students</p>
+            </div>
+
+            <div class="stat-card">
+                <i class="fas fa-box-open"></i>
+                <h3 class="counter" data-target="500">0</h3>
+                <p>Products</p>
+            </div>
+
+            <div class="stat-card">
+                <i class="fas fa-handshake"></i>
+                <h3 class="counter" data-target="200">0</h3>
+                <p>Successful Exchanges</p>
+            </div>
+
+            <div class="stat-card">
+                <i class="fas fa-school"></i>
+                <h3 class="counter" data-target="50">0</h3>
+                <p>Colleges Connected</p>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="product-slider-section">
+
+        <h2>Trending Products</h2>
+
+        <div class="slider-container">
+
+            <div class="slider-track">
+
+                <div class="product-card">
+
+                    <!-- Wishlist -->
+                    <button class="wishlist-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <!-- Product Image -->
+                    <img src="images/maths Engineering.webp" alt="Engineering Mathematics">
+
+                    <!-- Product Info -->
+                    <div class="product-info">
+
+                        <h3>Engineering Mathematics</h3>
+
+                        <p class="price">₹250</p>
+
+                        <div class="rating">
+                            ⭐⭐⭐⭐⭐
+                            <span>(42 Reviews)</span>
+                        </div>
+
+                        <p class="seller">
+                            Sold by <strong>Rahul Sharma</strong>
+                        </p>
+
+                        <!-- Buttons -->
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+
+                        <a href="Product_Detail_Book.html" class="details-link">
+                            View Details →
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="product-card">
+
+                    <!-- Wishlist -->
+                    <button class="wishlist-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <!-- Product Image -->
+                    <img src="../CampusBazzar/images/calculator.png" alt="Scientific Calculator">
+
+                    <!-- Product Info -->
+                    <div class="product-info">
+
+                        <h3>Scientific Calculator</h3>
+
+                        <p class="price">₹600</p>
+
+                        <div class="rating">
+                            ⭐⭐⭐⭐⭐
+                            <span>(42 Reviews)</span>
+                        </div>
+
+                        <p class="seller">
+                            Sold by <strong>Priya Ahuja</strong>
+                        </p>
+
+                        <!-- Buttons -->
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+
+                        <a href="Product_Detail_Calculator.html" class="details-link">
+                            View Details →
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="product-card">
+
+                    <!-- Wishlist -->
+                    <button class="wishlist-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <!-- Product Image -->
+                    <img src="../CampusBazzar/images/cycle.webp" alt="Cycle">
+
+                    <!-- Product Info -->
+                    <div class="product-info">
+
+                        <h3>Mountain Cycle</h3>
+
+                        <p class="price">₹4500</p>
+
+                        <div class="rating">
+                            ⭐⭐⭐⭐⭐
+                            <span>(42 Reviews)</span>
+                        </div>
+
+                        <p class="seller">
+                            Sold by <strong>Rishi Mehta</strong>
+                        </p>
+
+                        <!-- Buttons -->
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+
+                        <a href="Product_Detail_Cycle.html" class="details-link">
+                            View Details →
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="product-card">
+
+                    <!-- Wishlist -->
+                    <button class="wishlist-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <!-- Product Image -->
+                    <img src="../CampusBazzar/images/laptop.png" alt="Laptop">
+
+                    <!-- Product Info -->
+                    <div class="product-info">
+
+                        <h3>Laptop</h3>
+
+                        <p class="price">₹25000</p>
+
+                        <div class="rating">
+                            ⭐⭐⭐⭐⭐
+                            <span>(42 Reviews)</span>
+                        </div>
+
+                        <p class="seller">
+                            Sold by <strong>Sahil Patel</strong>
+                        </p>
+
+                        <!-- Buttons -->
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+
+                        <a href="Product_Detail_Laptop.html" class="details-link">
+                            View Details →
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="product-card">
+
+                    <!-- Wishlist -->
+                    <button class="wishlist-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <!-- Product Image -->
+                    <img src="../CampusBazzar/images/kit.jpg" alt="Stationery Kit">
+
+                    <!-- Product Info -->
+                    <div class="product-info">
+
+                        <h3>Stationery Kit</h3>
+
+                        <p class="price">₹150</p>
+
+                        <div class="rating">
+                            ⭐⭐⭐⭐⭐
+                            <span>(42 Reviews)</span>
+                        </div>
+
+                        <p class="seller">
+                            Sold by <strong>Shivangi Sharma</strong>
+                        </p>
+
+                        <!-- Buttons -->
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+
+                        <a href="Product_Detail_kit.html" class="details-link">
+                            View Details →
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="product-card">
+
+                    <!-- Wishlist -->
+                    <button class="wishlist-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <!-- Product Image -->
+                    <img src="../CampusBazzar/images/hostel-1.jpg" alt="Hostel Essentials">
+
+                    <!-- Product Info -->
+                    <div class="product-info">
+
+                        <h3>Hostel Essentials</h3>
+
+                        <p class="price">₹850</p>
+
+                        <div class="rating">
+                            ⭐⭐⭐⭐⭐
+                            <span>(42 Reviews)</span>
+                        </div>
+
+                        <p class="seller">
+                            Sold by <strong>Kriya Shah</strong>
+                        </p>
+
+                        <!-- Buttons -->
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+
+                        <a href="Product_Detail_hostel.html" class="details-link">
+                            View Details →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Categories -->
+
+    <section class="categories hidden">
+
+        <h2>Shop By Category</h2>
+
+        <div class="category-container">
+
+            <div class="category-card">
+                <i class="fas fa-book"></i>
+                <h3>Books</h3>
+            </div>
+
+            <div class="category-card">
+                <i class="fas fa-calculator"></i>
+                <h3>Calculator</h3>
+            </div>
+
+            <div class="category-card">
+                <i class="fas fa-bicycle"></i>
+                <h3>Cycles</h3>
+            </div>
+
+            <div class="category-card">
+                <i class="fas fa-laptop"></i>
+                <h3>Laptops</h3>
+            </div>
+
+            <div class="category-card">
+                <i class="fas fa-pen"></i>
+                <h3>Stationery</h3>
+            </div>
+
+            <div class="category-card">
+                <i class="fas fa-house"></i>
+                <h3>Hostel</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Featured Products -->
+
+    <section class="products hidden">
+
+        <h2>Featured Products</h2>
+
+        <div class="product-grid">
+
+            <div class="product-card">
+
+                <img src="../CampusBazzar/images/maths Engineering.webp" alt="Book">
+
+                <h3>Engineering Mathematics</h3>
+
+                <p>₹250</p>
+
+                <a href="../CampusBazzar/Product_Detail_Book.html">
+                    <button>View Details</button>
+                </a>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="../CampusBazzar/images/calculator.png" alt="Calculator">
+
+                <h3>Scientific Calculator</h3>
+
+                <p>₹600</p>
+
+                <a href="../CampusBazzar/Product_Detail_Calculator.html">
+                    <button>View Details</button>
+                </a>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="../CampusBazzar/images/cycle.webp" alt="Cycle">
+
+                <h3>Hero Sprint Cycle</h3>
+
+                <p>₹4500</p>
+
+                <a href="../CampusBazzar/Product_Detail_Cycle.html">
+                    <button>View Details</button>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Features -->
+
+    <section class="features hidden">
+
+        <h2>Why Choose CampusBazaar?</h2>
+
+        <div class="feature-container">
+
+            <div class="feature-box">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Verified Students</h3>
+                <p>Safe and trusted student marketplace.</p>
+            </div>
+
+            <div class="feature-box">
+                <i class="fas fa-money-bill-wave"></i>
+                <h3>Affordable Prices</h3>
+                <p>Buy second-hand products at lower prices.</p>
+            </div>
+
+            <div class="feature-box">
+                <i class="fas fa-sync-alt"></i>
+                <h3>Easy Exchange</h3>
+                <p>Exchange products with other students.</p>
+            </div>
+
+            <div class="feature-box">
+                <i class="fas fa-headset"></i>
+                <h3>Support</h3>
+                <p>Quick support for buyers and sellers.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CTA -->
+
+    <section class="cta">
+
+        <h2>Ready To Sell Your Old College Items?</h2>
+
+        <p>Join CampusBazaar and start selling today.</p>
+
+        <a href="register.html">
+            <button>Get Started</button>
+        </a>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="footer-main">
+
+            <div class="footer-column">
+                <h3>Get to Know Us</h3>
+                <ul>
+                    <li><a href="about.html">About CampusBazaar</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Student Community</a></li>
+                    <li><a href="#">Campus News</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Buy & Sell</h3>
+                <ul>
+                    <li><a href="products.html">Browse Products</a></li>
+                    <li><a href="#">Sell Items</a></li>
+                    <li><a href="#">Exchange Products</a></li>
+                    <li><a href="#">Student Deals</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Help & Support</h3>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Returns Policy</a></li>
+                    <li><a href="#">Report Issue</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Connect With Us</h3>
+
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <div class="footer-logo">
+                🎓 CampusBazaar
+            </div>
+
+            <p>
+                © 2026 CampusBazaar. All Rights Reserved.
+            </p>
+
+            <p>
+                Buy • Sell • Exchange College Essentials
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+<script src="Javascript/index.js"></script>
+
+</html>
