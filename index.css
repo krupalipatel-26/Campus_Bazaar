@@ -306,7 +306,7 @@ body{
         rgba(30,58,95,0.75),
         rgba(30,58,95,0.75)
     ),
-    url("../images/front.webp");
+    url("front.webp");
 
     background-size: cover;
     background-position: center;
